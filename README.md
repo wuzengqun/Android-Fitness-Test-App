@@ -22,11 +22,14 @@ https://ai.arcsoft.com.cn/product/arcface.html   # 虹软
   <img width="838" height="319" alt="c896c25182862b6acf34452e49f816d1" src="https://github.com/user-attachments/assets/253af3ae-0251-46f1-948b-e608366f5d59" />  
   
 步骤四、  
-  ● 注册虹软人脸识别adk
+  ● 注册虹软人脸识别adk  
   ● 新建一个免费的人脸识别应用，将对应的APP_ID与SDK_KEY填入项目代码:  
       <img width="2517" height="572" alt="3333b90de854d9a8cf7f0b9bdb5e1120" src="https://github.com/user-attachments/assets/50cf622f-1bbd-481b-a867-5c6eb601786a" />  
       <img width="1964" height="927" alt="0de10c605e993e6d2a81a60d3d42518e" src="https://github.com/user-attachments/assets/f9937bfe-1d3b-4e49-b4cf-82254472040f" />  
 
+步骤五、  
+  ● 进入软件，注册后登录  
+  ● 进入我的，点击激活，即可开始人脸录入和体测计数  
 
 
 运行效果:  
