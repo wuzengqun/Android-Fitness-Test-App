@@ -21,7 +21,7 @@ https://ai.arcsoft.com.cn/product/arcface.html   # 虹软
 &emsp;● 打开设置，按照下面这样选择gradle和JDK，可以减少出错概率  
 <div align="center">
   <img width="838" height="319" alt="c896c25182862b6acf34452e49f816d1" src="https://github.com/user-attachments/assets/253af3ae-0251-46f1-948b-e608366f5d59" />  
-<div align="center">
+<div align="center">  
   
 步骤四、  
 &emsp;● 注册虹软人脸识别adk  
