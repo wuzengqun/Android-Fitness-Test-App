@@ -33,10 +33,11 @@ https://ai.arcsoft.com.cn/product/arcface.html   # 虹软
 
 
 运行效果（由于手头上没有低版本的android手机，这里只展示界面）:  
+<div align="center">
 <video src="https://github.com/user-attachments/assets/c651a750-5fc4-4393-bed3-e97c7c7c8080" controls width="800">
   Your browser does not support the video tag.
-</video>  
-
+</video>
+</div>
 
 
 
