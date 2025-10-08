@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.FaceManageActivity"
+    android:background="#8968CD">
+
+    <LinearLayout
+        android:id="@+id/manage_layout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="欢迎使用Alive体测设备"
+            android:textSize="30sp"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="计算机视觉AI体测设备"
+            android:textSize="15sp"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="10dp" />
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/sports" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="人脸信息库"
+            android:textSize="25sp"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="0dp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="#CDCDCD"
+            app:cardCornerRadius="8dp"
+            android:layout_marginTop="0dp"
+            android:padding="16dp">
+
+
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alignmentMode="alignBounds"
+                android:columnCount="2"
+                android:background="@drawable/button_background_gray"
+                android:padding="16dp"
+                android:rowCount="2">
+
+
+
+
+                <!-- 第一行的第一个按钮 -->
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    android:onClick="facerigester"
+                    android:layout_marginLeft="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_background"
+                    android:gravity="center"
+                    android:padding="4dp"
+                    android:text="单人人脸信息录入"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:drawableLeft="@drawable/face"/>
+
+                <!-- 第一行的第二个按钮 -->
+                <Button
+                    android:id="@+id/button_pushup"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="clearFaces"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_background"
+                    android:gravity="center"
+                    android:padding="4dp"
+                    android:text="清除人脸信息库"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:drawableLeft="@drawable/clear" />
+
+                <!-- 第二行的第一个按钮 -->
+                <Button
+                    android:id="@+id/button_crunch"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="lookFaces"
+                    android:background="@drawable/button_background"
+                    android:gravity="center"
+                    android:text="注册人脸信息查询"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:padding="4dp"
+                    android:drawableLeft="@drawable/find"/>
+
+                <!-- 第二行的第二个按钮 -->
+                <Button
+                    android:id="@+id/button_batchrigester"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="batchrigester"
+                    android:background="@drawable/button_background"
+                    android:gravity="center"
+                    android:text="批量注册人脸信息"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:padding="4dp"
+                    android:drawableLeft="@drawable/find"/>
+
+                <!-- 第三行的第一个按钮 -->
+                <Button
+                    android:id="@+id/button_situp"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="returnfunselect"
+                    android:background="@drawable/button_background"
+                    android:gravity="center"
+                    android:text="返回功能选择"
+                    android:padding="4dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:layout_marginTop="6dp"
+                    android:drawableLeft="@drawable/return1"/>
+
+            </GridLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_margin="50dp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/notification_register_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+<!--        <Button-->
+<!--            android:layout_margin="0dp"-->
+<!--            android:layout_gravity="center_horizontal"-->
+<!--            android:onClick="facerigester"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/button_background_gray"-->
+<!--            android:text="单人人脸信息录入"/>-->
+
+<!--        <Button-->
+<!--            android:layout_margin="0dp"-->
+<!--            android:layout_gravity="center_horizontal"-->
+<!--            android:onClick="clearFaces"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/button_background_gray"-->
+<!--            android:text="清除所有人脸信息"/>-->
+
+<!--        <Button-->
+<!--            android:layout_margin="10dp"-->
+<!--            android:layout_gravity="center_horizontal"-->
+<!--            android:onClick="lookFaces"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/button_background_gray"-->
+<!--            android:text="查看已录入人脸信息"/>-->
+
+<!--        <TextView-->
+<!--            android:layout_margin="50dp"-->
+<!--            android:layout_gravity="center_horizontal"-->
+<!--            android:id="@+id/notification_register_result"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content" />-->
+
+<!--        <Button-->
+<!--            android:layout_margin="10dp"-->
+<!--            android:layout_gravity="center_horizontal"-->
+<!--            android:onClick="returnfunselect"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/button_background_gray"-->
+<!--            android:text="返回功能选择界面"/>-->
+    </LinearLayout>
+</ScrollView>

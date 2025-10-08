@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#5D478B"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="注册账号"
+        android:textSize="30sp"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="用户名:"
+        android:textSize="16sp"
+        android:textColor="#333" />
+
+    <EditText
+        android:id="@+id/usename"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:hint=" 请输入用户名"
+        android:maxWidth="488dp"
+        android:background="@drawable/edit_text_background"
+        android:padding="8dp"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="密 码:"
+        android:textSize="16sp"
+        android:textColor="#333" />
+
+    <EditText
+        android:id="@+id/usepwd"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:inputType="textPassword"
+        android:hint=" 请输入密码"
+        android:maxWidth="488dp"
+        android:background="@drawable/edit_text_background"
+        android:padding="8dp"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="确认密码:"
+        android:textSize="16sp"
+        android:textColor="#333" />
+
+    <EditText
+        android:id="@+id/usepwd2"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:inputType="textPassword"
+        android:hint=" 请再次输入密码"
+        android:maxWidth="488dp"
+        android:background="@drawable/edit_text_background"
+        android:padding="8dp"
+        android:layout_marginBottom="24dp"/>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="注册"
+        android:background="@drawable/button_background"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"/>
+</LinearLayout>

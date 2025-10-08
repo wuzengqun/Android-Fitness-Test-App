@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.facedetect">
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="实验室alive"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.FaceAttrPreviewActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.WelcomeActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activity.LoginActivity"
+            android:launchMode="singleTop" />
+
+        <activity
+            android:name=".activity.RegisterActivity"
+            android:launchMode="singleTop" />
+
+        <activity
+            android:name=".activity.FuncSelectFaceRecogActivity"
+            android:launchMode="singleTop" />
+
+        <activity
+            android:name=".activity.PhysicalTestActivity"
+            android:launchMode="singleTop" />
+
+        <activity
+            android:name=".activity.ViewAndManageFaceInfo"
+            android:launchMode="singleTop" />
+
+        <activity
+            android:name=".activity.MineActivity"
+            android:launchMode="singleTop" />
+
+        <activity
+            android:name=".activity.Fourscore"
+            android:launchMode="singleTop" />
+
+        <activity android:name=".activity.SearchScoreActivity"
+            android:launchMode="singleTop" />
+
+
+        <activity
+            android:name=".activity.ScoreInquiryAngManageActivity"
+            android:launchMode="singleTop" />
+
+
+        <activity
+            android:name=".activity.ChooseFunctionActivity"
+            android:launchMode="singleTop" />
+
+        <activity
+            android:name=".activity.SingleImageActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop" />
+
+        <activity
+            android:name=".activity.MultiImageActivity"
+            android:launchMode="singleTop" />
+
+        <activity
+            android:name=".activity.IrRegisterAndRecognizeActivity"
+            android:launchMode="singleTop" />
+
+        <activity
+            android:name=".activity.RegisterAndRecognizeActivity"
+            android:launchMode="singleTop" />
+
+        <activity
+            android:name=".activity.RecognizeActivity"
+            android:launchMode="singleTop" />
+
+        <activity
+            android:name=".activity.FaceManageActivity"
+            android:launchMode="singleTop" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+    </application>
+
+</manifest>

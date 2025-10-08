@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#5D478B"
+    tools:context=".activity.MineActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/navigation_mine_xml">
+
+        <LinearLayout
+            android:id="@+id/manage_layout_mine"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="欢迎使用Alive体测设备"
+                android:textSize="30sp"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="0dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="计算机视觉AI体测设备"
+                android:textSize="15sp"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="10dp" />
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/sports" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="4dp"
+                app:cardBackgroundColor="#CDCDCD"
+                app:cardCornerRadius="8dp"
+                android:layout_marginTop="20dp"
+                android:padding="16dp">
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:alignmentMode="alignBounds"
+                    android:columnCount="2"
+                    android:background="@drawable/button_background_gray"
+                    android:padding="16dp"
+                    android:rowCount="2">
+
+
+                    <!-- 第一行的第一个按钮 -->
+                    <Button
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="6dp"
+                        android:onClick="secretchange"
+                        android:layout_marginLeft="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_background"
+                        android:gravity="center"
+                        android:padding="4dp"
+                        android:text="修改密码"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:drawableLeft="@drawable/secretchange"/>
+
+                    <!-- 第一行的第二个按钮 -->
+                    <Button
+                        android:id="@+id/button_pushup"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="exit"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_background"
+                        android:gravity="center"
+                        android:padding="4dp"
+                        android:text="退出登录"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:drawableLeft="@drawable/exit" />
+
+                    <!-- 第二行的第一个按钮 -->
+                    <Button
+                        android:id="@+id/button_crunch"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:onClick="activate_engine"
+                        android:background="@drawable/button_background"
+                        android:gravity="center"
+                        android:text="激活引擎"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:padding="4dp"
+                        android:drawableLeft="@drawable/activate"/>
+
+                    <!-- 第二行的第二个按钮 -->
+                    <!--                    <Button-->
+                    <!--                        android:id="@+id/button_situp"-->
+                    <!--                        android:layout_width="150dp"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_weight="1"-->
+                    <!--                        android:onClick="returnfunselect"-->
+                    <!--                        android:background="@drawable/button_background"-->
+                    <!--                        android:gravity="center"-->
+                    <!--                        android:text="返回功能选择"-->
+                    <!--                        android:padding="4dp"-->
+                    <!--                        android:textColor="#FFFFFF"-->
+                    <!--                        android:textSize="16sp"-->
+                    <!--                        android:drawableLeft="@drawable/return1"/>-->
+
+                </GridLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!--            <TextView-->
+            <!--                android:layout_margin="50dp"-->
+            <!--                android:layout_gravity="center_horizontal"-->
+            <!--                android:id="@+id/notification_register_result"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content" />-->
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- 底部导航栏 -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation_mine_xml"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
+        android:background="?android:attr/windowBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:itemIconTint="@android:color/black"
+        app:menu="@menu/bottom_navigation_menu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

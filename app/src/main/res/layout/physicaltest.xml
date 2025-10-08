@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/physical_layout"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+<!--    <Button-->
+<!--        android:id="@+id/buttonSelectPullup"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="yt" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/buttonSelectPushup"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="fwc" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/buttonSelectSitupcount"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="sd" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/buttonSelectCrushcount"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="yw" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/buttonSelectStopcount"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="st" />-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+<!--    <Spinner-->
+<!--        android:id="@+id/spinnerModel"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:drawSelectorOnTop="true"-->
+<!--        android:entries="@array/model_array" />-->
+
+<!--    <Spinner-->
+<!--        android:id="@+id/spinnerCPUGPU"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:drawSelectorOnTop="true"-->
+<!--        android:entries="@array/cpugpu_array" />-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+
+    
+<!--    <TextView-->
+<!--        android:id="@+id/textViewSelectedowner"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_weight="1"-->
+<!--        android:text="负责人："-->
+<!--        android:padding="2dp"-->
+<!--        android:textSize="13sp"/>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/textViewSelectedClass"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_weight="1"-->
+<!--        android:text="班级："-->
+<!--        android:padding="2dp"-->
+<!--        android:layout_marginLeft="16dp"-->
+<!--        android:textSize="13sp"/>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/textViewSelectedgrade"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_weight="1"-->
+<!--        android:text="年级："-->
+<!--        android:padding="2dp"-->
+<!--        android:textSize="13sp"/>-->
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="姓名："
+            android:padding="2dp"
+            android:textSize="13sp"/>
+
+        <TextView
+            android:id="@+id/textViewClass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="班级："
+            android:padding="2dp"
+            android:textSize="13sp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/textViewProject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="当前项目："
+            android:padding="2dp"
+            android:textSize="13sp"/>
+
+        <TextView
+            android:id="@+id/textViewdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="日期："
+            android:padding="2dp"
+            android:textSize="13sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+    <TextView
+            android:id="@+id/textViewcount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="个数：0"
+            android:padding="2dp"
+            android:textSize="13sp"/>
+
+    <Button
+        android:id="@+id/start_count"
+        android:layout_width="450dp"
+        android:layout_height="20dp"
+        android:layout_weight="1"
+        android:layout_margin="5dp"
+        android:onClick="start_count"
+        android:text="开始"
+        android:background="@drawable/button_background"
+        android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView_countdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  倒计时: 10 S" />
+
+    <SurfaceView
+        android:id="@+id/cameraview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+</LinearLayout>
