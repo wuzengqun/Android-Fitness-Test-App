@@ -32,10 +32,14 @@ https://ai.arcsoft.com.cn/product/arcface.html   # 虹软
   ● 进入我的，点击激活，即可开始人脸录入和体测计数  
 
 
-运行效果:  
-<video src="https://github.com/user-attachments/assets/76baf2dc-dbb9-453a-b230-7379bdd9776b" controls width="800">
+运行效果（由于手头上没有低版本的android手机，这里只展示界面）:  
+<video src="https://github.com/user-attachments/assets/c651a750-5fc4-4393-bed3-e97c7c7c8080" controls width="800">
   Your browser does not support the video tag.
 </video>  
+
+
+
+
 
 
 
