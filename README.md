@@ -19,7 +19,9 @@ https://ai.arcsoft.com.cn/product/arcface.html   # 虹软
 步骤三、  
 &emsp;● 克隆此项目，使用Android Studio打开   
 &emsp;● 打开设置，按照下面这样选择gradle和JDK，可以减少出错概率  
+<div align="center">
   <img width="838" height="319" alt="c896c25182862b6acf34452e49f816d1" src="https://github.com/user-attachments/assets/253af3ae-0251-46f1-948b-e608366f5d59" />  
+<div align="center">
   
 步骤四、  
 &emsp;● 注册虹软人脸识别adk  
@@ -58,10 +60,10 @@ https://ai.arcsoft.com.cn/product/arcface.html   # 虹软
 yolo11-pose模型转换指南   
 ---
 步骤一、  
-https://github.com/ultralytics/ultralytics  
+&emsp; https://github.com/ultralytics/ultralytics  
 &emsp;● 克隆yolo11官方项目  
 
 步骤二、  
-● 下载默认权重或使用自己训练的权重文件  
-● 在自己的环境里运行: yolo export model=yolo11n-pose.pt format=ncnn  
-● 在同级目录下的yolo11n-pose_ncnn_model文件里可以找到:model.ncnn.bin、model.ncnn.param  
+&emsp;● 下载默认权重或使用自己训练的权重文件  
+&emsp;● 在自己的环境里运行: yolo export model=yolo11n-pose.pt format=ncnn  
+&emsp;● 在同级目录下的yolo11n-pose_ncnn_model文件里可以找到:model.ncnn.bin、model.ncnn.param  
